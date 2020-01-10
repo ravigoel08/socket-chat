@@ -2,9 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-//app.get('/', function(req, res){       routing url to /
-    //res.send("<h1>Hello World!</h1>");        rendering html 
-//});
+
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
